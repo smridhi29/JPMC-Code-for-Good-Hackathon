@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="../../css/styles.css" rel="stylesheet" />
+        <link href="../../css/style1.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+        crossorigin="anonymous"
+      />
+    </head>
+
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">LAALI FELLOWSHIP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/manager/view-mentors">View Mentors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/manager/add-organisation">Add Organisation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/manager/assign-mentors">Assign Mentors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/manager/view-feedback">Mentor feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div style="margin:45px 10px 20px;"class="text-heading text-center">
+            <h2> Add Organisation Page</h2>
+        </div>
+        <div style="padding:50px;"class="container">
+        <form action="/manager/add-org" method="POST">
+            <div class="form-group">
+                <p>Organisation's Name :</p>
+                <input id="name" type="text" class="form-control" placeholder="Organisation Name">
+            </div>
+            <div class="form-group">
+                <p>Activities willing to volunteer : </p>
+                <input id="volunteer" type="text" class="form-control" placeholder="Organisation Name">
+            </div>
+            <div class="form-group">
+                <p>Mentor to collaborate : </p>
+                <select class="form-control" id="mentor">
+                    <option value="Mentor-1">Mentor-1</option>
+                    <option value="Mentor-1">Mentor-2</option>
+                    <option value="Mentor-1">Mentor-3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Contact Number : </p>
+                <input id="number" type="text" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <p>Organisation's Email-ID : </p>
+                <input id="name" type="email" class="form-control" placeholder="Organisation Email">
+            </div>
+            <a class="btn btn-primary">Submit</a>
+        </form>
+        </div>
+        <!-- Footer-->
+    <!-- <footer style="position: absolute; bottom: 0; width: 100%;" class="py-5 bg-dark">
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+    </footer> -->
+    <!-- Bootstrap core JS-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
+      </body>
+</html>
